@@ -1,0 +1,48 @@
+{
+  "enquestes": [
+    {
+      "id": 1,
+      "titol": "Satisfacció neteja banys públics",
+      "activa": true,
+      "preguntes": [
+        {
+          "ordre": 1,
+          "text": "Com valoraries la qualitat de la neteja?",
+          "tipus": "opcio_multiple",
+          "opcions": [
+            "Molt satisfet",
+            "Acceptable",
+            "Molt insatisfet"
+          ]
+        },
+        {
+          "ordre": 2,
+          "text": "Quin aspecte milloraries?",
+          "tipus": "text_lliure"
+        }
+      ]
+    },
+    {
+      "id": 2,
+  "titol": "Enquesta investigació supermercats",
+  "activa": false,
+  "preguntes": [
+    {
+      "ordre":1,
+      "text": "Quantes vegades per setmana vas al supermercat a fer la compra?",
+      "tipus":"opcio_multiple",
+      "opcions": [
+        "De 1 a 3",
+        "De 4 a 6",
+        "7 o més"
+      ]
+    },
+    {
+      "ordre": 2,
+      "text": "Quins productes compres més sovint?",
+      "tipus":"text_lliure"
+    }
+  ]
+}
+  ]
+}
