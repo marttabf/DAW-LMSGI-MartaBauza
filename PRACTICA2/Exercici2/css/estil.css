@@ -1,0 +1,147 @@
+/* =========================================
+   ESTILS GENERALS I BASE
+   ========================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  background-color: #f4f6f7;
+}
+
+/* =========================================
+   CAPÇALERA I NAVEGACIÓ (FLEXBOX)
+   ========================================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 18px 32px;
+}
+
+header h1 {
+  font-size: 1.6rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4px 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+nav a:hover {
+  color: #2ecc71;
+  border-bottom-color: #2ecc71;
+}
+
+/* =========================================
+   LAYOUT PRINCIPAL (MAIN + ASIDE EN FILA)
+   ========================================= */
+/* Com que main i aside són fills directes de body, fem servir flex-wrap
+   perquè footer baixi a sota i ocupi el 100% de l'amplada */
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header,
+footer {
+  width: 100%;
+}
+
+main {
+  width: 70%;
+  padding: 30px 1% 30px 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* =========================================
+   ARTICLES
+   ========================================= */
+article {
+  background-color: #ffffff;
+  border-left: 4px solid #27ae60;
+  border-radius: 4px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+article h2 {
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+  color: #2c3e50;
+}
+
+article p {
+  color: #4a5568;
+}
+
+/* =========================================
+   BARRA LATERAL (ASIDE)
+   ========================================= */
+aside {
+  width: 28%;
+  margin: 30px 2% 30px 0;
+  background-color: #ecf0f1;
+  padding: 20px 24px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+aside h2 {
+  color: #1e8449;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+aside ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+aside li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+aside li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+/* =========================================
+   PEU DE PÀGINA (FOOTER)
+   ========================================= */
+footer {
+  background-color: #2c3e50;
+  color: #bdc3c7;
+  text-align: center;
+  padding: 18px 20px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
